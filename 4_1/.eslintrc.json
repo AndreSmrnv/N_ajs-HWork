@@ -8,8 +8,9 @@
   "rules": {
     "no-restricted-syntax": [
       "error",
-      "LabeledStatement",
+      "LabeledStatement",      
       "WithStatement"
-    ]
+    ],
+    "import/prefer-default-export": "off"
   }
 }

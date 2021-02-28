@@ -10,6 +10,7 @@
       "error",
       "LabeledStatement",
       "WithStatement"
-    ]
+    ],
+    "import/prefer-default-export": "off"
   }
 }
