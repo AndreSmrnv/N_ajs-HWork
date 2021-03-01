@@ -40,6 +40,14 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    alias: {
+      '@styles': path.resolve(__dirname, 'src', 'css'),
+      '@js': path.resolve(__dirname, 'src', 'js'),
+      '@tests': path.resolve(__dirname, 'src', 'js', '__tests__'),
+    },
+  },
+
   plugins: [
     new HtmlWebPackPlugin({
       template: './src/index.html',
