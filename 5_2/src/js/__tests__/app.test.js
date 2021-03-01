@@ -101,12 +101,12 @@ test('Bowman levelUp', () => {
   const result = new Bowman('test', 'Bowman');
   result.levelUp();
   expect(result.level).toBe(2);
-  expect(result.attack ).toBe(45);
+  expect(result.attack).toBe(45);
   expect(result.defence).toBe(45);
-  expect(result.health ).toBe(100);
+  expect(result.health).toBe(100);
 });
 test('Bowman damage', () => {
   const result = new Bowman('test', 'Bowman');
-  result.damage(100);  
-  expect(result.health ).toBe(25);
+  result.damage(100);
+  expect(result.health).toBe(25);
 });

@@ -11,6 +11,7 @@ export default class Character {
   get name() {
     return this._name;
   }
+
   set name(value) {
     if (value.length < 2) {
       throw new Error('Имя слишком короткое.');
@@ -24,6 +25,7 @@ export default class Character {
   get type() {
     return this._type;
   }
+
   set type(value) {
     switch (value) {
       case 'Bowman':
@@ -69,6 +71,5 @@ export default class Character {
     if (this.health > 0) {
       this.health -= points * (1 - this.defence / 100);
     }
-    
   }
 }
