@@ -6,13 +6,21 @@ const arrIn = [
   { name: 'лучник', health: 80 },
 ];
 
-test('sortMatchers', () => {
+test('sortMatchers not.toBe', () => {
   const sortArray = sortMatchers(arrIn);
   const resultArr = [
     { name: 'маг', health: 100 },
     { name: 'лучник', health: 80 },
     { name: 'мечник', health: 10 },
   ];
-  //expect(sortArray).toBe(resultArr);
+  expect(sortArray).not.toBe(resultArr);
+});
+test('sortMatchers toEqual', () => {
+  const sortArray = sortMatchers(arrIn);
+  const resultArr = [
+    { name: 'маг', health: 100 },
+    { name: 'лучник', health: 80 },
+    { name: 'мечник', health: 10 },
+  ];
   expect(sortArray).toEqual(resultArr);
 });
