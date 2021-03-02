@@ -1,5 +1,5 @@
 import {
-  getAvailSpetial
+  getAvailSpetial,
 } from '../app';
 
 const character = {
@@ -14,15 +14,15 @@ const character = {
       id: 8,
       name: 'Двойной выстрел',
       icon: 'http://...',
-      description: 'Двойной выстрел наносит двойной урон'
+      description: 'Двойной выстрел наносит двойной урон',
     },
     {
       id: 9,
       name: 'Нокаутирующий удар',
-      icon: 'http://...'
+      icon: 'http://...',
       // <- обратите внимание, описание "засекречено"
-    }
-  ]
+    },
+  ],
 };
 // getAvailSpetial(character);
 
@@ -48,4 +48,3 @@ test('getAvailSpetial eqKeys Array elem 1', () => {
   const exp = 4;
   expect(result).toBe(exp);
 });
-
