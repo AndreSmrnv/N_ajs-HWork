@@ -105,6 +105,11 @@ test('Bowman levelUp', () => {
   expect(result.defence).toBe(45);
   expect(result.health).toBe(100);
 });
+test('Bowman levelUp dead', () => {
+  const result = new Bowman('test', 'Bowman');
+  result.health = 0;
+  expect(() => { result.levelUp(); }).toThrow(Error);
+});
 test('Bowman damage', () => {
   const result = new Bowman('test', 'Bowman');
   result.damage(100);

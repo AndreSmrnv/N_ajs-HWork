@@ -64,6 +64,8 @@ export default class Character {
       this.attack += 20;
       this.defence += 20;
       this.health = 100;
+    } else {
+      throw new Error('Невозможно, вы мертвы.');
     }
   }
 
