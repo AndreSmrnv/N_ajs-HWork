@@ -1,7 +1,5 @@
 // TODO: write your code here
 
-
-
 export class ErrorRepository {
   constructor() {
     this.errors = new Map();
@@ -18,6 +16,5 @@ export class ErrorRepository {
     this.errors.set(3, 'Задан неверный тип.');
   }
 }
-
 
 console.log('worked');
