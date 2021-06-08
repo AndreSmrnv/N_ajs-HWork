@@ -20,12 +20,10 @@ export default class Dope extends Character {
   }
 
   get attack() {
-    let attack = this._attack;
-    if (this.stoned) {
-      attack -= Math.floor(Math.log2(this.distance) * 5);
-    } else {
-      attack -= Math.floor(this._attack * ((11 - this.distance) / 10));
-    }
-    return (attack > 0) ? attack : 0;
+    let attack = this._attack * (11 - this.distance) / 10;
+    
+    attack -= this.stoned ? (Math.log2(this.distance) * 5) : 0;
+     
+    return (attack > 0) ? Math.floor(attack) : 0;
   }
 }
