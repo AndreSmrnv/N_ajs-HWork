@@ -1,5 +1,5 @@
-import json from './Parser.js';
-import read from './Reader.js';
+import json from './parser';
+import read from './reader';
 
 class GameSavingLoader {
   static load() {
