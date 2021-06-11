@@ -13,4 +13,3 @@ class GameSavingLoader {
 }
 
 export default GameSavingLoader;
-

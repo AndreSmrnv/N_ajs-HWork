@@ -7,7 +7,6 @@ const loadSaving = async () => {
   console.log(saving);
 };
 
-  loadSaving();
-
+loadSaving();
 
 console.log('worked');
